@@ -1,5 +1,7 @@
 package es.uniovi.ds.lab.visitor;
 
+import static java.lang.System.out;
+
 import es.uniovi.ds.lab.nodes.Program;
 import es.uniovi.ds.lab.nodes.expressions.*;
 import es.uniovi.ds.lab.nodes.statements.*;
@@ -15,28 +17,28 @@ public class FormatterVisitor implements Visitor {
 
     @Override
     public void visitInput(Input input) {
-        System.out.print("input ");
+        out.print("input ");
         visitVariable(input.variable);
-        System.out.println(";");
+        out.println(";");
     }
 
     @Override
     public void visitPrint(Print print) {
-        System.out.print("print ");
+        out.print("print ");
         // visit(print.expression);
-        System.out.println(";");
+        out.println(";");
     }
 
     @Override
     public void visitArithmetic(Arithmetic arithmetic) {
         // visit(arithmetic.left);
-        System.out.print(" " + arithmetic.operator + " ");
+        out.print(" " + arithmetic.operator + " ");
         // visit(arithmetic.right);
     }
 
     @Override
     public void visitVariable(Variable variable) {
-        System.out.print(variable.name);
+        out.print(variable.name);
     }
 
 }
