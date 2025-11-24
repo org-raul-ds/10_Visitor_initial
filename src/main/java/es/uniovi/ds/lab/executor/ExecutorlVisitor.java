@@ -9,10 +9,10 @@ import es.uniovi.ds.lab.visitor.Visitor;
 
 public class ExecutorlVisitor {
 
+    private Scanner scanner = new Scanner(System.in);
+
     // Auxiliary method to get an integer input from the user
     private int getUserInput() {
-        try (Scanner scanner = new Scanner(System.in)) {
-            return scanner.nextInt();
-        }
+        return scanner.nextInt();
     }
 }
