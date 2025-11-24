@@ -6,13 +6,14 @@ import es.uniovi.ds.lab.nodes.statements.*;
 
 public interface Visitor {
 
-    void visit(Program program);
+    void visitProgram(Program program);
 
-    void visit(Input input);
+    void visitInput(Input input);
 
-    void visit(Print print);
+    void visitPrint(Print print);
 
-    void visit(Variable variable);
+    void visitArithmetic(Arithmetic arithmetic);
 
-    void visit(Arithmetic arithmetic);
+    void visitVariable(Variable variable);
+
 }

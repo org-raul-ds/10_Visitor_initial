@@ -7,36 +7,36 @@ import es.uniovi.ds.lab.nodes.statements.*;
 public class FormatterVisitor implements Visitor {
 
     @Override
-    public void visit(Program program) {
+    public void visitProgram(Program program) {
         for (Statement statement : program.statements)
-            // format(statement)
+            // visit(statement)
             ;
     }
 
     @Override
-    public void visit(Input input) {
+    public void visitInput(Input input) {
         System.out.print("input ");
-        // formatVariable(input.variable);
+        visitVariable(input.variable);
         System.out.println(";");
     }
 
     @Override
-    public void visit(Print print) {
+    public void visitPrint(Print print) {
         System.out.print("print ");
-        // format(print.expression);
+        // visit(print.expression);
         System.out.println(";");
     }
 
     @Override
-    public void visit(Variable variable) {
-        System.out.print(variable.name);
+    public void visitArithmetic(Arithmetic arithmetic) {
+        // visit(arithmetic.left);
+        System.out.print(" " + arithmetic.operator + " ");
+        // visit(arithmetic.right);
     }
 
     @Override
-    public void visit(Arithmetic arithmetic) {
-        // format(arithmetic.left);
-        System.out.print(" " + arithmetic.operator + " ");
-        // format(arithmetic.right);
+    public void visitVariable(Variable variable) {
+        System.out.print(variable.name);
     }
 
 }
