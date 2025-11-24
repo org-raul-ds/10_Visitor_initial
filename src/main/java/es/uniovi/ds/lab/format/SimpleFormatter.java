@@ -6,7 +6,7 @@ import es.uniovi.ds.lab.nodes.Program;
 import es.uniovi.ds.lab.nodes.expressions.*;
 import es.uniovi.ds.lab.nodes.statements.*;
 
-public class Formatter {
+public class SimpleFormatter {
 
     public void visitProgram(Program program) {
         for (Statement statement : program.statements)
