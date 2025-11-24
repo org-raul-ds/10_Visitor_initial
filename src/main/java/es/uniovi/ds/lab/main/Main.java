@@ -11,6 +11,24 @@ import es.uniovi.ds.lab.visitor.FormatterVisitor;
 public class Main {
 
     public static void main(String[] args) {
+
+        Program program = createProgram();
+
+        // Format the program
+        System.out.println("Formatted program using SimpleFormatter --------------");
+        var simpleFormatter = new SimpleFormatter();
+        simpleFormatter.visitProgram(program);
+
+        System.out.println("Formatted program using FormatterVisitor -------------");
+        var formatterVisitor = new FormatterVisitor();
+        formatterVisitor.visitProgram(program);
+
+        // Execute the program
+        System.out.println("Executing program ------------------------------------");
+        // ??
+    }
+
+    private static Program createProgram() {
         /*
         * input height;
         * input width;
@@ -24,19 +42,10 @@ public class Main {
         var widthInput = new Input(new Variable("width"));
 
         // print height * width;
-        var print = new Print(new Arithmetic(new Variable("height"), "*", new Variable("width")));
+        var printResult = new Print(new Arithmetic(new Variable("height"), "*", new Variable("width")));
 
-        // Create the program
-        Program program = new Program(List.of(heightInput, widthInput, print));
-
-        // Format the program
-        System.out.println("Formatted program using SimpleFormatter --------------");
-        var simpleFormatter = new SimpleFormatter();
-        simpleFormatter.visitProgram(program);
-
-        System.out.println("Formatted program using FormatterVisitor --------------");
-        var formatterVisitor = new FormatterVisitor();
-        formatterVisitor.visitProgram(program);
+        // Create program
+        return new Program(List.of(heightInput, widthInput, printResult));
     }
 
 }
