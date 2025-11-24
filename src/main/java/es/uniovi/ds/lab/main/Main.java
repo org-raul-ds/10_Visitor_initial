@@ -26,6 +26,10 @@ public class Main {
         // Execute the program
         System.out.println("Executing program ------------------------------------");
         // ??
+
+        // Translate to python
+        System.out.println("Translating program to Python ------------------------");
+        // ??
     }
 
     private static Program createProgram() {
