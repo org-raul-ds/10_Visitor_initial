@@ -2,9 +2,9 @@ package es.uniovi.ds.lab.main;
 
 import java.util.List;
 
-import es.uniovi.ds.lab.main.nodes.Program;
-import es.uniovi.ds.lab.main.nodes.expressions.*;
-import es.uniovi.ds.lab.main.nodes.statements.*;
+import es.uniovi.ds.lab.nodes.Program;
+import es.uniovi.ds.lab.nodes.expressions.*;
+import es.uniovi.ds.lab.nodes.statements.*;
 
 public class Main {
 

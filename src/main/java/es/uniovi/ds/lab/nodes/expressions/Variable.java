@@ -1,4 +1,4 @@
-package es.uniovi.ds.lab.main.nodes.expressions;
+package es.uniovi.ds.lab.nodes.expressions;
 
 public class Variable implements Expression {
 

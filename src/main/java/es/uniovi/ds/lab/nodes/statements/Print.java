@@ -1,6 +1,6 @@
-package es.uniovi.ds.lab.main.nodes.statements;
+package es.uniovi.ds.lab.nodes.statements;
 
-import es.uniovi.ds.lab.main.nodes.expressions.Expression;
+import es.uniovi.ds.lab.nodes.expressions.Expression;
 
 public class Print implements Statement {
 

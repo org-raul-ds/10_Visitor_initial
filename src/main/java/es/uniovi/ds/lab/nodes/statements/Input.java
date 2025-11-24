@@ -1,6 +1,6 @@
-package es.uniovi.ds.lab.main.nodes.statements;
+package es.uniovi.ds.lab.nodes.statements;
 
-import es.uniovi.ds.lab.main.nodes.expressions.Variable;
+import es.uniovi.ds.lab.nodes.expressions.Variable;
 
 public class Input implements Statement {
 

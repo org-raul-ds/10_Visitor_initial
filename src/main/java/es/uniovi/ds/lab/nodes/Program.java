@@ -1,8 +1,8 @@
-package es.uniovi.ds.lab.main.nodes;
+package es.uniovi.ds.lab.nodes;
 
 import java.util.*;
 
-import es.uniovi.ds.lab.main.nodes.statements.Statement;
+import es.uniovi.ds.lab.nodes.statements.Statement;
 
 public class Program implements Node {
 
