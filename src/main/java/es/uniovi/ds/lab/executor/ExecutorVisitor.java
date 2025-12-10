@@ -7,7 +7,26 @@ import es.uniovi.ds.lab.nodes.expressions.*;
 import es.uniovi.ds.lab.nodes.statements.*;
 import es.uniovi.ds.lab.visitor.Visitor;
 
-public class ExecutorlVisitor {
+/*
+// Input
+    input heigth;
+    input width;
+    print heigth * width;
+
+// Output
+    Type value for heigth: 5
+    Type value for width: 10
+    50
+*/
+
+/*
+Requirements:
+- All variables are of `int` type.
+- If you access an uninitialized variable, it defaults to 0.
+- Only has addition, subtraction, multiplication, and division.
+*/
+
+public class ExecutorVisitor {
 
     private Scanner scanner = new Scanner(System.in);
 

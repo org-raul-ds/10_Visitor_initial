@@ -11,7 +11,7 @@ public class FormatterVisitor implements Visitor {
     @Override
     public void visitProgram(Program program) {
         for (Statement statement : program.statements)
-            // visit(statement)
+            // visit(statement);
             ;
     }
 
