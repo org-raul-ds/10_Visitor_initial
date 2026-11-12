@@ -2,7 +2,6 @@ package es.uniovi.ds.lab.main;
 
 import java.util.List;
 
-import es.uniovi.ds.lab.format.SimpleFormatter;
 import es.uniovi.ds.lab.nodes.Program;
 import es.uniovi.ds.lab.nodes.expressions.*;
 import es.uniovi.ds.lab.nodes.statements.*;
@@ -15,10 +14,6 @@ public class Main {
         Program program = createProgram();
 
         // Format the program
-        System.out.println("Formatted program using SimpleFormatter --------------");
-        var simpleFormatter = new SimpleFormatter();
-        simpleFormatter.visitProgram(program);
-
         System.out.println("Formatted program using FormatterVisitor -------------");
         var formatterVisitor = new FormatterVisitor();
         formatterVisitor.visitProgram(program);
